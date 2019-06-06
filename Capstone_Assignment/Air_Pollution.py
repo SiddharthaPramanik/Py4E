@@ -1,3 +1,5 @@
+# Author : Siddhartha Pramanik
+
 import urllib.request, urllib.parse
 import json
 import ssl
@@ -8,7 +10,7 @@ def print_json_list(list):
     print(json.dumps(list, indent=4, sort_keys=True))
 
 
-# Method to get the data from data.gov.in API and write it to a file
+# Method to get the data from the API and write it to a file
 def update_data(fname):
     # Ignore SSL certificate errors
     ctx = ssl.create_default_context()
